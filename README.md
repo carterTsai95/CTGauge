@@ -1,5 +1,9 @@
 # CTGauge
 
+<p align="center">
+    <img src="Media/Accessibility-FontSize-1.png">
+</p>
+
 **CTGauge** is your companion to work with Gauge view on iOS.
 
 <p align="center">
@@ -21,6 +25,10 @@
 
 1. A circular gauge style for the CTGauge view.
 
+<p align="center">
+    <img src="Media/Circular-Gauge.png">
+</p>
+
 This style represents the gauge as a circular arc with an indicator dot that moves along the arc based on the gauge value.
 
 ```swift
@@ -39,7 +47,7 @@ public struct DemoView: View {
 ```
 
 <p align="center">
-    <img src="Assets/dominant_colors.jpg">
+    <img src="Media/Needle-Gauge.png">
 </p>
 
 2. A needle gauge style for the CTGauge view.
@@ -69,7 +77,9 @@ public struct DemoView: View {
 
 **CTGauge** allows the size of the gauge view to be scaled relative to the font size specified by the user's device settings which Apple's native gauge view does not handle font size changes by the user. It can lead to readability and accessibility issues for users who require larger or smaller text sizes. By contrast, the CTGauge view's use of ScaledPointSize ensures that the gauge view remains legible and accessible to all users, regardless of their device settings.
 
-
+<p align="center">
+    <img src="Media/Accessibility-FontSize-2.png">
+</p>
 
 ---
 
