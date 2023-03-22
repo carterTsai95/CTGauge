@@ -26,7 +26,7 @@
 1. A circular gauge style for the CTGauge view.
 
 <p align="center">
-    <img src="Media/Circular-Gauge.png">
+    <img src="Media/Circular-Gauge.png" width="125">
 </p>
 
 This style represents the gauge as a circular arc with an indicator dot that moves along the arc based on the gauge value.
@@ -47,7 +47,7 @@ public struct DemoView: View {
 ```
 
 <p align="center">
-    <img src="Media/Needle-Gauge.png">
+    <img src="Media/Needle-Gauge.png" width="125">
 </p>
 
 2. A needle gauge style for the CTGauge view.
@@ -147,3 +147,15 @@ Alternatively, you can also use XCode to add **CTGauge** to your existing projec
 **CTGauge** can also be added to your project manually. Download the **CTGauge** project from Github, then drag and drop the folder `CTGauge` into your XCode project.
 
 </br>
+
+## Contributing
+
+Contributions to **CTGauge** are always welcome!   
+For bugs and feature requests, open an [issue](https://github.com/tsaihong1995/CTGauge/issues).  
+To contribute to the code base, simply submit a [pull request](https://github.com/tsaihong1995/CTGauge/pulls).
+
+</br>
+
+## License
+
+See the [License](https://github.com/tsaihong1995/CTGauge/blob/main/LICENSE.md). You are free to make changes and use this in either personal or commercial projects. Attribution is not required, but highly appreciated. A little "Thanks!" (or something to that affect) is always welcome. If you use **ColorKit** in one of your projects, please let us know!
