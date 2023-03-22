@@ -21,11 +21,11 @@ struct CTGaugeForegroundKey: EnvironmentKey {
 }
 
 struct CTGaugeInicatorColorKey: EnvironmentKey {
-    static var defaultValue: Color = .white
+    static var defaultValue: AnyShapeStyle = AnyShapeStyle(.white)
 }
 
 struct CTGaugeNeedleIndicatorColorKey: EnvironmentKey {
-    static var defaultValue: Color = .black
+    static var defaultValue: AnyShapeStyle = AnyShapeStyle(.black)
 }
 
 /**
@@ -37,7 +37,7 @@ extension EnvironmentValues {
         set { self[CTGaugeStyleKey.self] = newValue }
     }
 
-    var ctGaugeIndicatorColor: Color {
+    var ctGaugeIndicatorColor: AnyShapeStyle {
         get { self[CTGaugeInicatorColorKey.self] }
         set { self[CTGaugeInicatorColorKey.self] = newValue }
     }
@@ -47,7 +47,7 @@ extension EnvironmentValues {
         set { self[CTGaugeForegroundKey.self] = newValue }
     }
 
-    var ctNeedleIndicatorColor: Color {
+    var ctNeedleIndicatorColor: AnyShapeStyle {
         get { self[CTGaugeNeedleIndicatorColorKey.self] }
         set { self[CTGaugeNeedleIndicatorColorKey.self] = newValue }
     }

@@ -62,7 +62,7 @@ public struct NeedleGaugeStyle: CTGaugeStyle {
                         .rotationEffect(
                             .radians(configuration.currentValueRadians)
                         )
-                        .foregroundColor(configuration.needleColor)
+                        .foregroundStyle(configuration.needleColor)
                 }
 
         }

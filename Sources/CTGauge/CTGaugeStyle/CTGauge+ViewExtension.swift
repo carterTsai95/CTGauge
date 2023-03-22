@@ -15,11 +15,11 @@ public extension View {
         environment(\.ctForegroundColor, AnyShapeStyle(color))
     }
 
-    func ctIndicatorColor(_ color: Color) -> some View {
-        environment(\.ctGaugeIndicatorColor, color)
+    func ctIndicatorColor(_ color: any ShapeStyle) -> some View {
+        environment(\.ctGaugeIndicatorColor, AnyShapeStyle(color))
     }
 
-    func ctNeedleColor(_ color: Color) -> some View {
-        environment(\.ctNeedleIndicatorColor, color)
+    func ctNeedleColor(_ color: any ShapeStyle) -> some View {
+        environment(\.ctNeedleIndicatorColor, AnyShapeStyle(color))
     }
 }

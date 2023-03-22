@@ -52,7 +52,7 @@ public struct CircularGaugeStyle: CTGaugeStyle {
                             x: configuration.indicatorPosition.x,
                             y: configuration.indicatorPosition.y
                         )
-                        .foregroundColor(configuration.indicatorColor)
+                        .foregroundStyle(configuration.indicatorColor)
 
                     Text(configuration.value, format: .number)
                         .font(.title)

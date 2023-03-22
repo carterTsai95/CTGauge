@@ -154,7 +154,7 @@ public struct DemoView: View {
                 Text(maxValue, format: .number)
             }
             .ctGaugeStyle(.needleGauge)
-            .ctNeedleColor(.red)
+            .ctNeedleColor(.green)
             
             Slider(value: $value, in: minValue...maxValue)
                 .padding()

@@ -32,8 +32,8 @@ public struct CTGaugeStyleConfiguration {
         width: Double,
         height: Double,
         foregroundColor: AnyShapeStyle,
-        indicatorColor: Color,
-        needleColor: Color,
+        indicatorColor: AnyShapeStyle,
+        needleColor: AnyShapeStyle,
         minimumLabel: CTGaugeStyleConfiguration.MinimumLabel,
         maximumValueLabel: CTGaugeStyleConfiguration.MaximumLabel
     ) {
@@ -60,9 +60,9 @@ public struct CTGaugeStyleConfiguration {
 
     var foregroundColor: AnyShapeStyle
 
-    var indicatorColor: Color
+    var indicatorColor: AnyShapeStyle
 
-    var needleColor: Color
+    var needleColor: AnyShapeStyle
     
     var gaugeIndicationWidth: Double = 6
 
