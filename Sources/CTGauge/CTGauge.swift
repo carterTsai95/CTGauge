@@ -114,7 +114,7 @@ public struct DemoView: View {
     @State var value = 0.0
     private let minValue = 0.0
     private let maxValue = 1.0
-
+    
     public init(value: Double = 0.0) {
         self.value = value
     }
@@ -126,28 +126,28 @@ public struct DemoView: View {
                 .ctIndicatorColor(.red)
                 .ctGaugeForegroundColor(
                     .angularGradient(
-                          Gradient(colors: [.red, .yellow, .green, .blue, .purple]), center: .center, startAngle: .degrees(130), endAngle: .degrees(360)
-                      )
+                        Gradient(colors: [.red, .yellow, .green, .blue, .purple]), center: .center, startAngle: .degrees(130), endAngle: .degrees(360)
+                    )
                 )
             
             /// MARK: Middle Gauge View
             CTGauge(
                 value: value,
-                in: 0...100,
-                gaugeWidth: 100, gaugeHeight: 100) {
-                    Text(minValue, format: .number)
-                } maximumValueLabel: {
-                    Text(maxValue, format: .number)
-                }
-                .ctGaugeForegroundColor(
-                    .angularGradient(
-                          Gradient(colors: [.red, .yellow, .green, .blue, .purple]), center: .center, startAngle: .degrees(130), endAngle: .degrees(360)
-                      )
+                in: 0...100
+            ) {
+                Text(minValue, format: .number)
+            } maximumValueLabel: {
+                Text(maxValue, format: .number)
+            }
+            .ctGaugeForegroundColor(
+                .angularGradient(
+                    Gradient(colors: [.red, .yellow, .green, .blue, .purple]), center: .center, startAngle: .degrees(130), endAngle: .degrees(360)
                 )
-                .ctIndicatorColor(.black)
+            )
+            .ctIndicatorColor(.black)
             
             
-            /// MARK: Middle Gauge View
+            /// MARK: Bottom Gauge View
             CTGauge(value: value) {
                 Text(minValue, format: .number)
             } maximumValueLabel: {

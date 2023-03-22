@@ -6,6 +6,6 @@ final class CTGaugeTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(CTGauge().text, "Hello, World!")
+        XCTAssertEqual(CTGauge(value: 1).value, 1)
     }
 }
