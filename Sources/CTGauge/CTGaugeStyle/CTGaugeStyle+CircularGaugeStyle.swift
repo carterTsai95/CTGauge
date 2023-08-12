@@ -16,13 +16,13 @@ public struct CircularGaugeStyle: CTGaugeStyle {
     public func makeBody(configuration: Configuration) -> some View {
         return ZStack {
             CTGaugeShape(gaugeIndicationWidth: configuration.gaugeIndicationWidth)
+                .style(withStroke: Color.red, fill: configuration.foregroundColor)
                 .aspectRatio(1, contentMode: .fit)
                 .frame(
                     width: configuration.gaugeLongestSide,
                     height: configuration.gaugeLongestSide,
                     alignment: .center
                 )
-                .foregroundStyle(configuration.foregroundColor)
                 .overlay(
                     alignment: .bottom
                 ) {
